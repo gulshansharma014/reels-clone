@@ -1,0 +1,110 @@
+.video-container{
+    height: 80vh;
+    border-radius: 20px;
+    background-color: white;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    margin: 0 50px
+}
+
+.video-container::-webkit-scrollbar {
+    display: none;
+}
+
+.videos{
+    position: relative;
+}
+
+.fa{
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+}
+
+.fa h4{
+    margin: 0;
+    color: white;
+    margin-top: 5%;
+    margin-left: 0%;
+}
+
+.icon-styling{
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+}
+
+.like{
+    cursor: pointer;
+    color : #e74c3c
+}
+
+.unlike{
+    cursor: pointer;
+    color: white;
+}
+
+.chat-styling{
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    cursor: pointer;
+}
+
+.modal-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.video-modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal video{
+    height: 85vh;
+}
+
+.comment-modal{
+    width: 50%;
+    height: 100%;
+}
+
+.unlike2{
+    color: black;
+    cursor: pointer;
+}
+
+.card1{
+    height: 70vh;
+}
+
+@media only screen and (max-width: 415px){
+
+    .videos{
+        background-color: black;
+    }
+    .video-container{
+        margin: 0;
+    }
+    
+}
+@media only screen and (max-width: 750px){
+
+    .modal-container{
+        flex-direction: column;
+    }
+    .video-modal{
+        width: 100%;
+    }
+    .comment-modal{
+        width: 100%;
+        height: max-content;
+    }
+}
